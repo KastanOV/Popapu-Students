@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/styles.css" type="text/css"/>
+
+        <title>Popapu login page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+        <script src="js/login.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-md-offset-4">
+                    <h1 class="text-center login-title">Přihlášení</h1>
+                    <div class="account-wall">
+                        <img class="profile-img" src="images/login.png" alt="">
+                        <form class="form-signin">
+                        <input id="serverAdress" type="text" class="form-control" placeholder="Empty for default" value="http://192.168.1.61:8080/PupilBookV11/webresources/">
+                        <input id="loginText" type="text" class="form-control" placeholder="login" required autofocus>
+                        <input id="passwordText" type="password" class="form-control" placeholder="Password" required>
+                        <button onclick="login()" class="btn btn-lg btn-primary btn-block" >přihlásit</button>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
